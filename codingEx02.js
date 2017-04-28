@@ -12,3 +12,12 @@ var addressBook = {
 // 605 Carmelita Ave
 // Atascadero, CA
 
+function listAddresses(obj){
+	for (key in obj){
+		for (let i=0; i<obj[key].length; i++){
+			console.log(i==0 ? key+"\n"+obj[key][i] : obj[key][i]);
+		}
+	}
+}
+
+listAddresses(addressBook);

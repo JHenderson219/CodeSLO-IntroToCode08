@@ -8,12 +8,12 @@ var phoneBook = {
 
 
 function forIn(obj){
-	for (key in obj){
-		return key+": "+obj[key];
+	for (var keys in obj){
+		console.log (keys+": "+obj[keys]);
 	}
 
 }
 // create a for / in loop that lists all the numbers in the 805 area code, along with who they belong to
 
 
-console.log(forIn(phoneBook));
+forIn(phoneBook); 
